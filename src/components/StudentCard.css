@@ -1,0 +1,92 @@
+.student-card {
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  border: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+}
+
+.student-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateX(4px);
+}
+
+.student-avatar {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+.student-info {
+  flex: 1;
+}
+
+.student-info h4 {
+  margin: 0 0 0.5rem;
+  color: var(--text-dark);
+  font-size: 1.125rem;
+}
+
+.student-email {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-light);
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.student-email svg {
+  color: var(--primary);
+}
+
+.student-id {
+  color: var(--text-light);
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.btn-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  color: var(--error);
+}
+
+.btn-icon:hover {
+  background-color: rgba(239, 68, 68, 0.1);
+  transform: scale(1.1);
+}
+
+.btn-icon.btn-danger {
+  color: var(--error);
+}
+
+@media (max-width: 768px) {
+  .student-card {
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  .student-avatar {
+    width: 48px;
+    height: 48px;
+  }
+}
