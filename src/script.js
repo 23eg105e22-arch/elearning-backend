@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-const API = "http://localhost:8080";
+const API = "https://elearning-backend-app.onrender.com";
 
 // STUDENT
 function addStudent() {
